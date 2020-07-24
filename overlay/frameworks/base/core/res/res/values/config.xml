@@ -667,4 +667,7 @@
 
     <!-- Wheter device supports an gaming mode profiles -->
     <bool name="config_gamingmode_performance">false</bool>
+
+    <!-- Enable the RingtonePickerActivity in 'com.android.providers.media'. -->
+    <bool name="config_defaultRingtonePickerEnabled">true</bool>
 </resources>
