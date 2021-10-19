@@ -152,7 +152,8 @@ PRODUCT_PACKAGES += \
     libcamshim \
     libmm-qcamera \
     libui_shim \
-    libmm-qcamera
+    Snap \
+    GCam
 
 # Component overrides
 PRODUCT_COPY_FILES += \
