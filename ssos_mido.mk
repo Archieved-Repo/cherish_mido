@@ -21,20 +21,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
-# Inherit some common ColtOS stuff.
-$(call inherit-product, vendor/colt/config/common_full_phone.mk)
+# Inherit some common ShapeshiftOS stuff.
+$(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 
 # Colt Stuff
-COLT_BUILD_TYPE := UNOFFICIAL
-COLT_BUILD_MAINTAINER := ~Pratyaksh.Bharadwaj~
+SSOS_BUILD_TYPE := UNOFFICIAL
 TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080x1920
 TARGET_SCREEN_DENSITY := 400
 
+# Inherit Shapeshift common stuff
+PRODUCT_PRODUCT_PROPERTIES += \
+ro.ssos.cpu=SD625/msm8953
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := colt_mido
+PRODUCT_NAME := ssos_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi

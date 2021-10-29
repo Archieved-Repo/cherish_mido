@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/colt_mido.mk
+    $(LOCAL_DIR)/ssos_mido.mk
 
 COMMON_LUNCH_CHOICES := \
-    colt_mido-user \
-    colt_mido-userdebug \
-    colt_mido-eng
+    ssos_mido-user \
+    ssos_mido-userdebug \
+    ssos_mido-eng
