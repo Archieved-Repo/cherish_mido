@@ -28,7 +28,7 @@ $(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 SSOS_BUILD_TYPE := UNOFFICIAL
 TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_BOOT_ANIMATION_RES := 1080x1920
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_DENSITY := 400
 
 # Inherit Shapeshift common stuff
