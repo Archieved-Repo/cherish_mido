@@ -155,10 +155,11 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.recovery.qcom
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 # RIL
-DISABLE_RILD_OEM_HOOK := true
+ENABLE_VENDOR_RIL_SERVICE := true
+TARGET_USES_OLD_MNC_FORMAT := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2021-02-05
+VENDOR_SECURITY_PATCH := 2021-07-05
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
