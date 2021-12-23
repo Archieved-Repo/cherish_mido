@@ -162,3 +162,6 @@ wifi.interface=wlan0
 
 # Wifi-Display
 persist.sys.wfd.virtual=0
+
+# Priv-app permission
+ro.control_privapp_permissions=false
