@@ -33,14 +33,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/Snap
 
-# Soong namespaces
-PRODUCT_BOARD_PLATFORM := msm8953
-PRODUCT_USES_QCOM_HARDWARE := true
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-hardware/qcom-caf/msm8996 \
-hardware/qcom-caf/wlan
-
 # Permissions
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml \
@@ -226,11 +218,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl:64 \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
-
-# HALs
-SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8996/audio
-SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8996/media
-SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8996/display
 
 # HIDL
 PRODUCT_PACKAGES += \
