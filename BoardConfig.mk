@@ -16,6 +16,8 @@
 
 DEVICE_PATH := device/xiaomi/mido
 
+YOUR_HW_PLATFORM := msm8953
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
