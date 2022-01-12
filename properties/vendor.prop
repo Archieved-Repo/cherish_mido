@@ -170,4 +170,4 @@ wifi.interface=wlan0
 persist.sys.wfd.virtual=0
 
 # Priv-app permission
-ro.control_privapp_permissions=false
+ro.control_privapp_permissions=log
