@@ -179,8 +179,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-#BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
