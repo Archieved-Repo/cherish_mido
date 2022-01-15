@@ -21,11 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
-# Inherit some common ShapeshiftOS stuff.
-$(call inherit-product, vendor/ssos/config/common_full_phone.mk)
+# Inherit some common CherishOS stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Colt Stuff
-SSOS_BUILD_TYPE := UNOFFICIAL
+CHERISH_BUILD_TYPE := UNOFFICIAL
 TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -34,13 +34,12 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_QUICK_TAP := true
 
-# Inherit Shapeshift common stuff
-PRODUCT_PRODUCT_PROPERTIES += \
-ro.ssos.cpu=SD625/msm8953
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=rockstar1995
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := ssos_mido
+PRODUCT_NAME := cherish_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
